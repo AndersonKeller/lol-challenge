@@ -1,5 +1,10 @@
 import { Char } from "@/data/chars";
-import { StyledCharInfos } from "./style";
+import {
+  StyledCharInfos,
+  StyledName,
+  StyledResume,
+  StyledSubtitle,
+} from "./style";
 
 interface CharInfosProps {
   char: Char;
@@ -7,9 +12,9 @@ interface CharInfosProps {
 export function CharInfos({ char }: CharInfosProps) {
   return (
     <StyledCharInfos>
-      <h2>{char.name}</h2>
-      <h6>{char.subtitle}</h6>
-      <p>{char.resume}</p>
+      <StyledName>{char.name}</StyledName>
+      <StyledSubtitle>{char.subtitle}</StyledSubtitle>
+      <StyledResume>{char.resume}</StyledResume>
     </StyledCharInfos>
   );
 }

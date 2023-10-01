@@ -1,15 +1,22 @@
+@font-face {
+  font-family: "Spiegel";
+
+  src: url(../fonts/Spiegel-Sans-Font/WOFF2/SpiegelSans-5Regular_TRIAL.woff2);
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   body {
     @apply bg-black;
   }
-}
+  body {
+    font-family: "Spiegel";
+  }
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
 
-main {
-  max-width: 1440px;
-
-  margin: 0 auto;
+    height: 100vh;
+  }
 }

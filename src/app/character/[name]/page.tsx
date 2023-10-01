@@ -4,6 +4,7 @@ import { Char, charsInfos } from "@/data/chars";
 import { useParams } from "next/navigation";
 
 import { CharCard } from "@/components/charCard/CharCard";
+import { Nav } from "@/components/nav/Nav";
 export default function CharacterPage() {
   const params = useParams();
   console.log(params.name);
@@ -15,6 +16,7 @@ export default function CharacterPage() {
     <main>
       <Header />
       <CharCard char={char!} />
+      <Nav />
     </main>
   );
 }
