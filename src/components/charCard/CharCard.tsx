@@ -1,4 +1,5 @@
 import { Char } from "@/data/chars";
+import asheWallpaper from "@/imgs/ashe/letter2.svg";
 import jinxWallpaper from "@/imgs/jinx/letter2.png";
 import Image from "next/image";
 import { CharAvatar } from "../charAvatar/CharAvatar";
@@ -11,7 +12,13 @@ export function CharCard({ char }: CharCardProps) {
   return (
     <StyledCharCard>
       <Image
-        src={char.name == "Jinx" ? jinxWallpaper : ""}
+        src={
+          char.name == "Jinx"
+            ? jinxWallpaper
+            : char.name == "Ashe"
+            ? asheWallpaper
+            : ""
+        }
         alt={char.name}
         width={900}
         height={900}
