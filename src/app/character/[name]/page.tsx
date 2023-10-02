@@ -7,7 +7,7 @@ import { CharCard } from "@/components/charCard/CharCard";
 import { Nav } from "@/components/nav/Nav";
 export default function CharacterPage() {
   const params = useParams();
-  console.log(params.name);
+
   const char: Char | undefined = charsInfos.find(
     (char) => char.name.toLowerCase() == params.name
   );
