@@ -5,6 +5,7 @@ export const StyledCharInfos = tw.div`
     flex
     flex-col
     gap-4
+    z-[1]
 `;
 export const StyledName = tw.h2`
   italic

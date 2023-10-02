@@ -9,6 +9,7 @@ export const StyledAvatar = tw.div`
 `;
 export const StyledClassName = tw.h3`
   absolute
+  z-[1]
   bottom-[5%]
   uppercase
   text-display-xl

@@ -11,7 +11,20 @@ interface CharCardProps {
 }
 export function CharCard({ char }: CharCardProps) {
   return (
-    <StyledCharCard>
+    <>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "fixed",
+          top: "0",
+          left: "0",
+          zIndex: "1",
+          boxShadow: "black -10px -220px 500px 60px inset",
+        }}
+      >
+        {" "}
+      </div>
       <Image
         src={
           char.name == "Jinx"
@@ -25,18 +38,20 @@ export function CharCard({ char }: CharCardProps) {
         height={900}
         priority={true}
         style={{
-          height: "100vh",
+          height: "100%",
           width: "100%",
+          objectFit: "cover",
           position: "fixed",
           top: "0",
           left: "0",
           zIndex: "0",
-          objectFit: "cover",
         }}
       />
 
-      <CharAvatar char={char} />
-      <CharInfos char={char} />
-    </StyledCharCard>
+      <StyledCharCard>
+        <CharAvatar char={char} />
+        <CharInfos char={char} />
+      </StyledCharCard>
+    </>
   );
 }

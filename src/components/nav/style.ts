@@ -5,6 +5,7 @@ export const StyledNav = tw.nav`
   pl-[64px]
   flex
   gap-[16px]
+  z-[1]
 `;
 export const StyledBtn = tw.button`
   
