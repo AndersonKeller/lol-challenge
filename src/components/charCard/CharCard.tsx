@@ -1,5 +1,6 @@
 import { Char } from "@/data/chars";
-import asheWallpaper from "@/imgs/ashe/letter2.svg";
+import asheWallpaper from "@/imgs/ashe/letter2.png";
+import garenWallpapper from "@/imgs/garen/letter2.png";
 import jinxWallpaper from "@/imgs/jinx/letter2.png";
 import Image from "next/image";
 import { CharAvatar } from "../charAvatar/CharAvatar";
@@ -17,11 +18,12 @@ export function CharCard({ char }: CharCardProps) {
             ? jinxWallpaper
             : char.name == "Ashe"
             ? asheWallpaper
-            : ""
+            : garenWallpapper
         }
         alt={char.name}
         width={900}
         height={900}
+        priority={true}
         style={{
           height: "100vh",
           width: "100%",

@@ -1,6 +1,7 @@
 import { Char } from "@/data/chars";
-import asheAvatar from "@/imgs/ashe/ashe.svg";
-import jinxAvatar from "@/imgs/jinx/jinx.svg";
+import asheAvatar from "@/imgs/ashe/ashe.png";
+import garenAvatar from "@/imgs/garen/garen.png";
+import jinxAvatar from "@/imgs/jinx/jinx.png";
 import Image from "next/image";
 import { StyledAvatar, StyledClassName } from "./style";
 interface CharAvatarProps {
@@ -18,9 +19,10 @@ export function CharAvatar({ char }: CharAvatarProps) {
             ? jinxAvatar
             : char.name == "Ashe"
             ? asheAvatar
-            : ""
+            : garenAvatar
         }
-        style={{ maxHeight: "700px" }}
+        style={{ maxHeight: "700px", objectFit: "contain" }}
+        priority={true}
       />
       <StyledClassName>{char.class}</StyledClassName>
     </StyledAvatar>
