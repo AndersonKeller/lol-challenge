@@ -1,3 +1,4 @@
+"use client";
 import { Char } from "@/data/chars";
 import asheWallpaper from "@/imgs/ashe/letter2.png";
 import garenWallpapper from "@/imgs/garen/letter2.png";
@@ -22,9 +23,7 @@ export function CharCard({ char }: CharCardProps) {
           zIndex: "1",
           boxShadow: "black -10px -220px 500px 60px inset",
         }}
-      >
-        {" "}
-      </div>
+      ></div>
       <Image
         src={
           char.name == "Jinx"
@@ -47,7 +46,6 @@ export function CharCard({ char }: CharCardProps) {
           zIndex: "0",
         }}
       />
-
       <StyledCharCard>
         <CharAvatar char={char} />
         <CharInfos char={char} />

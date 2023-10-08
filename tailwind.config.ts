@@ -27,6 +27,7 @@ const config: Config = {
       },
       fontFamily: {
         spiegel: "Spiegel",
+        spiegelItalic: "Spiegel-Italic",
       },
       fontSize: {
         "display-2xl": "72px",
