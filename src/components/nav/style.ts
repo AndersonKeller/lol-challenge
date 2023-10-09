@@ -8,5 +8,8 @@ export const StyledNav = tw.nav`
   z-[1]
 `;
 export const StyledBtn = tw.button`
-  
+  rounded-[50%]
+  p-4
+  border
+  border-yellow-600
 `;

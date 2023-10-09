@@ -12,6 +12,9 @@ export const StyledName = tw.h2`
   font-bold
   text-[128px]
   font-spiegelItalic
+  uppercase
+text-transparent
+
 `;
 export const StyledSubtitle = tw.h6`
   font-semibold

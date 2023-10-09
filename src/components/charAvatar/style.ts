@@ -13,5 +13,5 @@ export const StyledClassName = tw.h3`
   bottom-[5%]
   uppercase
   text-display-xl
-
+  font-spiegel
 `;

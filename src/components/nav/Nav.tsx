@@ -1,7 +1,7 @@
 import { Char, charsInfos } from "@/data/chars";
 import { useParams, useRouter } from "next/navigation";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
-import { StyledNav } from "./style";
+import { StyledBtn, StyledNav } from "./style";
 export function Nav() {
   const params = useParams();
   const router = useRouter();
@@ -28,30 +28,12 @@ export function Nav() {
   }
   return (
     <StyledNav>
-      <button
-        style={{
-          borderRadius: "50%",
-          padding: "14px",
-          border: "1px solid #c89b3c",
-        }}
-        onClick={prevChar}
-      >
-        <PiCaretLeftBold
-          style={{ width: "24px", height: "24px", color: " #c89b3c" }}
-        />
-      </button>
-      <button
-        style={{
-          borderRadius: "50%",
-          padding: "14px",
-          border: "1px solid #c89b3c",
-        }}
-        onClick={nextChar}
-      >
-        <PiCaretRightBold
-          style={{ width: "24px", height: "24px", color: " #c89b3c" }}
-        />
-      </button>
+      <StyledBtn onClick={prevChar}>
+        <PiCaretLeftBold className="w-6 h-6 text-yellow-600" />
+      </StyledBtn>
+      <StyledBtn onClick={nextChar}>
+        <PiCaretRightBold className="w-6 h-6 text-yellow-600" />
+      </StyledBtn>
     </StyledNav>
   );
 }

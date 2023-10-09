@@ -7,3 +7,12 @@ export const StyledCharCard = tw.section`
   items-center
  
 `;
+export const StyledFakeCard = tw.div`
+  w-full
+  h-full
+  fixed
+  top-0
+  left-0
+  z-[1]
+
+`;

@@ -17,7 +17,6 @@ export default function CharacterPage() {
   const char: Char | undefined = charsInfos.find(
     (char) => char.name.toLowerCase() == params.name
   );
-  console.log(char);
 
   return (
     <main>

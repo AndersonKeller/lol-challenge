@@ -12,7 +12,7 @@ export function CharAvatar({ char }: CharAvatarProps) {
     <StyledAvatar>
       <Image
         width={762}
-        height={700}
+        height={600}
         alt={char.class}
         src={
           char.name == "Jinx"
@@ -21,7 +21,12 @@ export function CharAvatar({ char }: CharAvatarProps) {
             ? asheAvatar
             : garenAvatar
         }
-        style={{ maxHeight: "700px", objectFit: "contain" }}
+        style={{
+          width: "auto",
+          height: "auto",
+          maxHeight: "600px",
+          objectFit: "contain",
+        }}
         priority={true}
       />
       <StyledClassName>{char.class}</StyledClassName>
