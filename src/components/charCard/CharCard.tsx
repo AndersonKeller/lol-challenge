@@ -5,6 +5,7 @@ import jinxWallpaper from "@/imgs/jinx/letter2.png";
 import Image from "next/image";
 import { CharAvatar } from "../charAvatar/CharAvatar";
 import { CharInfos } from "../charInfos/CharInfos";
+import styles from "./animation.module.css";
 import { StyledCharCard, StyledFakeCard } from "./style";
 interface CharCardProps {
   char: Char;
@@ -39,8 +40,9 @@ export function CharCard({ char }: CharCardProps) {
           zIndex: "0",
           transition: "all 1s ease",
         }}
+        className={styles.image}
       />
-      <StyledCharCard>
+      <StyledCharCard className={styles.card}>
         <CharAvatar char={char} />
         <CharInfos char={char} />
       </StyledCharCard>

@@ -1,0 +1,24 @@
+.image {
+  animation: imageOpacity 2s ease;
+  -webkit-animation: imageOpacity 2s ease;
+}
+@keyframes imageOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cardAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card {
+  animation: cardAnimation 1.5s ease;
+  -webkit-animation: cardAnimation 1.5s ease;
+}
