@@ -37,6 +37,7 @@ export function CharCard({ char }: CharCardProps) {
           top: "0",
           left: "0",
           zIndex: "0",
+          transition: "all 1s ease",
         }}
       />
       <StyledCharCard>

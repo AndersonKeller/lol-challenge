@@ -10,6 +10,7 @@ export const StyledCharInfos = tw.div`
     text-center
     sm:w-1/2
     sm:text-justify
+    sm:items-start
 `;
 export const StyledName = tw.h2`
   italic

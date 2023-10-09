@@ -8,6 +8,7 @@ export const StyledCharCard = tw.section`
   flex-col
   justify-center
   sm:flex-row
+  
 `;
 export const StyledFakeCard = tw.div`
   w-full
