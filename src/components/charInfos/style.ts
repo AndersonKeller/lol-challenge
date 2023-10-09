@@ -16,7 +16,7 @@ export const StyledName = tw.h2`
   italic
   font-bold
   text-[72px]
-  sm:text-[128px]
+  sm:text-[90px]
   font-spiegelItalic
   uppercase
   text-transparent
