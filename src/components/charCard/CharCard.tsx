@@ -26,8 +26,8 @@ export function CharCard({ char }: CharCardProps) {
             : garenWallpapper
         }
         alt={char.name}
-        width={900}
-        height={900}
+        width={1400}
+        height={950}
         priority={true}
         style={{
           height: "100%",

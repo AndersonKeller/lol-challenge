@@ -4,14 +4,16 @@ export const StyledAvatar = tw.div`
   flex
   flex-col
   items-center
-  w-1/2
+  w-full
   h-max
+  sm:w-1/2
 `;
 export const StyledClassName = tw.h3`
   absolute
   z-[1]
   bottom-[5%]
   uppercase
-  text-display-xl
+  text-display-lg
+  md:text-display-xl
   font-spiegel
 `;

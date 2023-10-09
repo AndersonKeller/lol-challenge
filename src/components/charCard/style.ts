@@ -5,7 +5,9 @@ export const StyledCharCard = tw.section`
   mx-auto
   flex
   items-center
- 
+  flex-col
+  justify-center
+  sm:flex-row
 `;
 export const StyledFakeCard = tw.div`
   w-full

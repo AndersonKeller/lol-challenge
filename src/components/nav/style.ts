@@ -2,8 +2,11 @@ import tw from "tailwind-styled-components";
 export const StyledNav = tw.nav`
   relative
   text-white
-  pl-[64px]
+  pl-0
+  sm:pl-[64px]
   flex
+  justify-around
+  sm:justify-normal
   gap-[16px]
   z-[1]
 `;
