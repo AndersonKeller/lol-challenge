@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 export const StyledNav = tw.nav`
-  relative
+  absolute
   text-white
   pl-0
   py-6
@@ -11,6 +11,9 @@ export const StyledNav = tw.nav`
   sm:justify-normal
   gap-[16px]
   z-[1]
+  bottom-[-100px]
+  left-6
+  sm:left-0
 `;
 export const StyledBtn = tw.button`
   rounded-[50%]

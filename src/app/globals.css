@@ -17,11 +17,12 @@
   }
   body {
     font-family: "Spiegel";
+    height: 100vh;
   }
   main {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    position: relative;
   }
 }

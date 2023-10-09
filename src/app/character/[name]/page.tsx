@@ -21,16 +21,19 @@ export default function CharacterPage() {
   );
 
   return (
-    <main>
+    <>
       <Header />
+
       {loading ? (
-        <Loading char={char!} />
+        <main className="flex items-center justify-center flex-col static">
+          <Loading char={char!} />
+        </main>
       ) : (
-        <>
+        <main className="flex items-center justify-center flex-col">
           <CharCard char={char!} />
           <Nav />
-        </>
+        </main>
       )}
-    </main>
+    </>
   );
 }

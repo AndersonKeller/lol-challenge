@@ -11,11 +11,12 @@ export const MainStyled = tw.main`
 export const SectionLoading = tw.section`
   flex
   items-center
-  justify-center
   w-full
   h-full
   absolute
   top-0
+  justify-center
+  max-w-[1440px]
   `;
 export const LoadingName = tw.h1<LoadingNameProps>`
 ${(prop) =>
@@ -25,7 +26,7 @@ ${(prop) =>
     ? "bg-[url('../imgs/ashe/letter.png')]"
     : "bg-[url('../imgs/garen/letter.png')]"}
 text-transparent
-text-[25vw]
+text-[20vw]
 font-extrabold
 bg-clip-text
 bg-top
