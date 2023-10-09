@@ -3,7 +3,9 @@ export const StyledNav = tw.nav`
   relative
   text-white
   pl-0
+  py-6
   sm:pl-[64px]
+  sm:pb-6
   flex
   justify-around
   sm:justify-normal
