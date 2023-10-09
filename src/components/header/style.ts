@@ -5,6 +5,7 @@ export const StyledHeader = tw.header`
    max-w-[1440px]
    mx-auto
    sm:p-[58px]
+   sm:pb-0
    relative
    z-10
 `;
